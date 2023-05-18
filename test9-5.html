@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 스타일</title>
+    <style>
+        .appleimg  { 
+                    background:url('media/apple-bg.jpg') no-repeat;
+                    border:2px solid blueviolet; padding:20px; 
+                    width:600px; height:400px; position:relative;
+                    background-size:cover;
+                    }
+        .content { 
+                position:absolute; top:300px; width:90%; 
+                padding:10px; background-color:rgba(255,255,255,50%);
+                }
+        h1 { font-size:30px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h3>배경 스타일</h3>
+    <hr>
+    <div class="appleimg">
+        <div class="content">
+            <h1>하루 한 알의 사과는 의사를 멀리 한다</h1>
+        </div>
+    </div>
+</body>
+</html>
