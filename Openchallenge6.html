@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별 문자 출력</title>
+    <script>
+        function printStar(n) {
+            var m = parseInt(n);
+            if(isNaN(m) || m < 1 ) {
+                document.write("입력 오류. ");
+                return ;
+            }
+            for(var i=1; i<=m; i++) {
+                for(var j=1; j<=i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>별 문자 출력하기</h3>
+    <hr>
+    <script>
+        var n = prompt("정수 입력 "," ");
+        printStar(n);
+    </script>
+</body>
+</html>
